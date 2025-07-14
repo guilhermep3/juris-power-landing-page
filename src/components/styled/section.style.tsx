@@ -12,3 +12,16 @@ export const Section = styled.section`
     padding: 48px 12px;
   `)}
 `;
+
+export const SectionTitle = styled.h1`
+  font-size: 36px;
+  font-weight: bold;
+
+  span {
+    color: var(--primary-color);
+  }
+
+  ${media.mobile(`
+    font-size: 28px;
+  `)}
+`

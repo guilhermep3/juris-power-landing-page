@@ -1,10 +1,11 @@
+import { About } from "@/components/layout/about";
 import { Hero } from "@/components/layout/hero";
-import { Button } from "@/components/styled/button.style";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Hero></Hero>
-    </div>
+      <About></About>
+    </main>
   );
 }

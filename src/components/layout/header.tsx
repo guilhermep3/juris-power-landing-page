@@ -8,10 +8,22 @@ import {
   NavList,
   NavItem,
 } from "../styled/header.style"
+import { useEffect, useState } from "react"
 
 export const Header = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  function checkIsActive(){
+    setIsActive(window.scrollY > 1 ? true : false);
+  }
+  useEffect(() => {
+    window.removeEventListener('scroll', checkIsActive);
+
+    return window.addEventListener('scroll', checkIsActive)
+  }, []);
+
   return (
-    <StyledHeader>
+    <StyledHeader className={isActive ? 'active' : ''}>
       <Container className="headerContainer">
         <LogoContainer>
           <img src="lawyer-icon-white.svg" alt="lawyer-icon-white" />

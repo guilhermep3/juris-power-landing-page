@@ -16,12 +16,19 @@ export const Container = styled.div`
     flex-direction: row;
   }
   &.heroContainer{
-    gap: 80px;
+    gap: 90px;
     margin-top: 80px;
     
     ${media.mobile(`
       margin-top: 40px;
     `)}
+  }
+  &.aboutContainer{
+    gap: 64px;
+
+    ${media.mobile(`
+      gap: 40px;
+    `)}    
   }
   &.flexRow{
     flex-direction: row;

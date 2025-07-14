@@ -6,10 +6,16 @@ export const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: var(--dark-blue);
   color: #ffffff;
-  padding: 16px 8px;
+  padding: 24px 8px;
   z-index: 10;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 4px #020205;
+
+  &.active{
+    padding: 16px 8px;
+  }
 `
 
 export const LogoContainer = styled.div`
