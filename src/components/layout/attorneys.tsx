@@ -6,7 +6,7 @@ import { Section, SectionTitle } from "../styled/section.style"
 export const Attorneys = () => {
 
   return (
-    <Section className="relative">
+    <Section id="attorneys" className="relative">
       <Container className="attorneysContainer">
         <AttorneysImages>
           <ImagesArea>

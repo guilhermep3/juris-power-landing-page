@@ -3,6 +3,7 @@ import { Attorneys } from "@/components/layout/attorneys";
 import { Cases } from "@/components/layout/cases";
 import { Hero } from "@/components/layout/hero";
 import { Services } from "@/components/layout/services";
+import { Testimonials } from "@/components/layout/testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Services></Services>
       <Attorneys></Attorneys>
       <Cases></Cases>
+      <Testimonials></Testimonials>
     </main>
   );
 }

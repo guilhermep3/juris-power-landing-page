@@ -9,6 +9,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 64px;
+  padding: 12px;
   
   &.flexCenter{
     justify-content: center;
@@ -20,6 +21,7 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding: 0;
   }
   &.heroContainer{
     gap: 90px;
@@ -44,5 +46,9 @@ export const Container = styled.div`
       gap: 40px;
       flex-direction: column;
     `)}
+  }
+
+  &.footerContainer{
+    gap: 20px;
   }
 `

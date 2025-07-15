@@ -5,8 +5,8 @@ import { CaseAside, CaseBox, CaseInfos, CaseRelative, CasesSlide, CasesTop } fro
 import { Container } from "../styled/container.style"
 import { Section, SectionTitle } from "../styled/section.style"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { casesData } from "@/data/cases"
 import 'swiper/css';
+import { casesData } from "@/data/cases"
 import { useEffect, useState } from "react"
 
 export const Cases = () => {
@@ -23,7 +23,7 @@ export const Cases = () => {
   }, []);
 
   return (
-    <Section>
+    <Section id="cases">
       <Container>
         <CasesTop>
           <SectionTitle>Nossos <span>estudos</span> de cada <span>caso</span></SectionTitle>
@@ -34,11 +34,9 @@ export const Cases = () => {
           <Swiper
             spaceBetween={40}
             slidesPerView={isMobile ? 1 : 3}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
           >
-            {casesData.map((i) => (
-              <SwiperSlide>
+            {casesData.map((i, index) => (
+              <SwiperSlide key={index}>
                 <CaseBox>
                   <img src={`cases/${i.img}`} alt={i.img} />
                   <CaseInfos>

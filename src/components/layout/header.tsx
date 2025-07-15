@@ -1,5 +1,5 @@
 "use client"
-import { headerLinks } from "@/data/header-links"
+import { linksNavigations } from "@/data/links-navigations"
 import { Container } from "../styled/container.style"
 import { Button } from "../styled/button.style"
 import {
@@ -7,13 +7,14 @@ import {
   LogoContainer,
   NavList,
   NavItem,
+  Nav,
 } from "../styled/header.style"
 import { useEffect, useState } from "react"
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
-  function checkIsActive(){
+  function checkIsActive() {
     setIsActive(window.scrollY > 1 ? true : false);
   }
   useEffect(() => {
@@ -26,19 +27,19 @@ export const Header = () => {
   return (
     <StyledHeader className={isActive ? 'active' : ''}>
       <Container className="headerContainer">
-        <LogoContainer>
+        <LogoContainer href="/">
           <img src="lawyer-icon-white.svg" alt="lawyer-icon-white" />
-          <p>Juris Power</p>
+          <p><span>Juris</span> Power</p>
         </LogoContainer>
-        <nav>
+        <Nav>
           <NavList>
-            {headerLinks.map((i, index) => (
+            {linksNavigations.map((i, index) => (
               <NavItem key={index}>
                 <a href={`#${i.href}`}>{i.label}</a>
               </NavItem>
             ))}
           </NavList>
-        </nav>
+        </Nav>
         <Button>Contato</Button>
       </Container>
     </StyledHeader>

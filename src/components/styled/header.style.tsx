@@ -18,7 +18,7 @@ export const StyledHeader = styled.header`
   }
 `
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.a`
   display: flex;
   align-items: center;
   gap: 8px;
@@ -39,20 +39,31 @@ export const LogoContainer = styled.div`
       max-width: 80px;
       font-size: 18px;  
     `)}
+
+    span{
+      color: var(--primary-color);
+    }
   }
 `
 
+export const Nav = styled.nav`
 
-export const NavList = styled.nav`
+  ${media.mobile(`
+    display: none;
+  `)}
+`
+
+export const NavList = styled.ul`
   display: flex;
   align-items: center;
   gap: 32px;
   list-style: none;
   text-transform: uppercase;
   font-size: 15px;
-
-  ${media.mobile(`
-    display: none;
+  
+  ${media.tablet(`
+    gap: 20px;
+    font-size: 13px;
   `)}
 `
 

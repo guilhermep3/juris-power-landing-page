@@ -21,6 +21,10 @@ export const SectionTitle = styled.h1`
   font-size: 36px;
   font-weight: bold;
 
+  &.center{
+    text-align: center;
+  }
+
   span {
     color: var(--primary-color);
   }
