@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { media } from "./mediaQueries"
 
 export const Section = styled.section`
-  padding: 64px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -11,6 +11,10 @@ export const Section = styled.section`
   ${media.mobile(`
     padding: 48px 12px;
   `)}
+
+  &.relative{
+    position: relative;
+  }
 `;
 
 export const SectionTitle = styled.h1`
@@ -23,5 +27,6 @@ export const SectionTitle = styled.h1`
 
   ${media.mobile(`
     font-size: 28px;
+    text-align: center;
   `)}
 `

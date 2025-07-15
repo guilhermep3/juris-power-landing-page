@@ -3,33 +3,27 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   background-color: var(--primary-color);
-  padding: 12px 32px;
+  padding: 12px 36px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   color: var(--dark-blue);
+  text-transform: uppercase;
 
-  &::before{
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 50%;
-    transform: translateX(-75%) translateY(-50%);
-    background-color: var(--dark-blue);
-    width: 44px;
-    height: 56px;
-    display: block;
-    border-radius: 200px;
-    transition: all 0.3s ease-in-out;
+  &.blue2{
+
+    &::before, &::after{
+      background-color: var(--dark-blue2);
+    }
   }
+
+  &::before,
   &::after{
     position: absolute;
     content: '';
-    right: 0;
     top: 50%;
-    transform: translateX(75%) translateY(-50%);
     background-color: var(--dark-blue);
     width: 44px;
     height: 56px;
@@ -38,13 +32,18 @@ export const Button = styled.button`
     transition: all 0.3s ease-in-out;
   }
   
-  &:hover{
-    
-    &::before{
-      height: 48px;
-    }
-    &::after{
-      height: 48px;
-    }
+  &::before{
+    left: 0;
+    transform: translateX(-75%) translateY(-50%);
+  }
+
+  &::after{
+    right: 0;
+    transform: translateX(75%) translateY(-50%);
+  }
+  
+  &:hover::before,
+  &:hover::after{
+    height: 48px;
   }
 `

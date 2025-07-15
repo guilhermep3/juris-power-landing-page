@@ -38,13 +38,13 @@ export const AboutP = styled.div`
 export const AboutImages = styled.div`
   width: 100%;
   height: auto;
+  margin-top: -80px;
 `;
 
 export const ImagesBox = styled.div`
   position: relative;
   width: 100%;
   aspect-ratio: 3 / 2;
-  background-color: #0c0b1d;
   overflow: hidden;
 `;
 
