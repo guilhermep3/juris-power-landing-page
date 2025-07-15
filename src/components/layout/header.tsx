@@ -17,9 +17,10 @@ export const Header = () => {
     setIsActive(window.scrollY > 1 ? true : false);
   }
   useEffect(() => {
-    window.removeEventListener('scroll', checkIsActive);
+    checkIsActive();
+    window.addEventListener('scroll', checkIsActive);
 
-    return window.addEventListener('scroll', checkIsActive)
+    return window.removeEventListener('scroll', checkIsActive)
   }, []);
 
   return (

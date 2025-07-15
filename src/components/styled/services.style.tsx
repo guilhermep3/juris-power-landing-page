@@ -9,6 +9,7 @@ export const ServicesTop = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 20px;
   
   h1{
     width: 50%;

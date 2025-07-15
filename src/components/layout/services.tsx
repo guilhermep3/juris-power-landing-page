@@ -6,7 +6,7 @@ import { Icon, ServiceBox, ServicesBottom, ServicesTop } from "../styled/service
 export const Services = () => {
 
   return (
-    <Section>
+    <Section id="services">
       <Container>
         <ServicesTop>
           <SectionTitle>Os <span>serviços</span> que atendemos</SectionTitle>
@@ -17,7 +17,7 @@ export const Services = () => {
         </ServicesTop>
         <ServicesBottom>
           {servicesData.map((i) => (
-            <ServiceBox>
+            <ServiceBox key={i.id}>
               <Icon>{i.icon}</Icon>
               <h3>{i.name}</h3>
               <p>{i.description}</p>

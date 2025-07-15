@@ -17,7 +17,7 @@ export const Attorneys = () => {
         <AttorneysTexts>
           <SectionTitle>Nós temos os <span>melhores advogados</span> para te atender</SectionTitle>
           <p>
-            Sabemos que questões jurídicas podem ser desafiadoras — por isso, atuamos com empatia, clareza e total 
+            Sabemos que questões jurídicas podem ser desafiadoras,  por isso, atuamos com empatia, clareza e total 
             transparência. Cada cliente é tratado como único, com atenção dedicada e soluções sob medida.
             Mais que advogados, somos seus parceiros para decisões seguras, inteligentes e amparadas pela lei.
           </p>

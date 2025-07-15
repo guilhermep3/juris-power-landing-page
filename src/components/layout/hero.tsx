@@ -5,7 +5,7 @@ import { Section } from "../styled/section.style"
 export const Hero = () => {
 
   return (
-    <Section>
+    <Section id="home">
       <Container className="flexCenter heroContainer">
         <HeroTitle>Consultoria <span>jurídica</span><br/> de alta <span>qualidade</span></HeroTitle>
         <HeroImage className="flexCenter">
