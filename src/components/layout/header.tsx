@@ -31,7 +31,7 @@ export const Header = () => {
       <StyledHeader className={isActive ? 'active' : ''}>
         <Container className="headerContainer">
           <LogoContainer href="/">
-            <img src="lawyer-icon-white.svg" alt="lawyer-icon-white" />
+            <img src="logo-juris-power.svg" alt="logo-juris-power" />
             <p><span>Juris</span> Power</p>
           </LogoContainer>
           <Nav>

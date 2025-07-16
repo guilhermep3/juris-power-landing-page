@@ -11,7 +11,7 @@ export const Footer = () => {
       <Container className="flexCenter footerContainer">
         <FooterTop>
           <LogoContainer>
-            <img src="lawyer-icon-white.svg" alt="lawyer-icon-white" />
+            <img src="logo-juris-power.svg" alt="logo-juris-power" />
             <p><span>Juris</span> Power</p>
           </LogoContainer>
           <FooterLinks>
