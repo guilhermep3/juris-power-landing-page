@@ -1,5 +1,6 @@
 "use client"
 import styled from "styled-components";
+import { media } from "./mediaQueries";
 
 export const Button = styled.button`
   background-color: var(--primary-color);
@@ -11,6 +12,11 @@ export const Button = styled.button`
   overflow: hidden;
   color: var(--dark-blue);
   text-transform: uppercase;
+
+  ${media.mobile(`
+    padding: 10px 32px;
+    font-size: 15px;
+  `)}
 
   &.blue2{
 

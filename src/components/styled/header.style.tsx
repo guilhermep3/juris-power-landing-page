@@ -12,6 +12,7 @@ export const StyledHeader = styled.header`
   z-index: 10;
   transition: all 0.3s linear;
   box-shadow: 2px 2px 4px #020205;
+  z-index: 30;
 
   &.active{
     padding: 16px 8px;

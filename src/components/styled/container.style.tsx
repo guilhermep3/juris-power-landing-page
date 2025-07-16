@@ -21,6 +21,10 @@ export const Container = styled.div`
     align-items: center;
     flex-direction: row;
     padding: 0;
+
+    ${media.mobile(`
+      gap: 16px;
+    `)}
   }
   &.heroContainer{
     gap: 90px;
