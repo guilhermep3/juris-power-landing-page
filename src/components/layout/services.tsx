@@ -9,7 +9,7 @@ export const Services = () => {
     <Section id="services">
       <Container>
         <ServicesTop>
-          <SectionTitle>Os <span>serviços</span> que atendemos</SectionTitle>
+          <SectionTitle data-aos="zoom-in">Os <span>serviços</span> que atendemos</SectionTitle>
           <p>
             Nossa missão é tornar o direito acessível, compreensível e eficiente para todos.
             Com ética, dedicação e comprometimento, atuamos de forma próxima, transparente e eficiente.
@@ -17,7 +17,7 @@ export const Services = () => {
         </ServicesTop>
         <ServicesBottom>
           {servicesData.map((i) => (
-            <ServiceBox key={i.id}>
+            <ServiceBox data-aos="fade-down" key={i.id}>
               <Icon>{i.icon}</Icon>
               <h3>{i.name}</h3>
               <p>{i.description}</p>

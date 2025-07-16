@@ -44,6 +44,10 @@ export const CaseInfos = styled.div`
   padding: 20px;
   background-color: var(--dark-blue2);
 
+  ${media.mobile(`
+    right: -25%;
+  `)}
+
   h1{
     font-size: 18px;
 

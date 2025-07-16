@@ -8,7 +8,7 @@ export const About = () => {
     <Section id="about">
       <Container className="aboutContainer">
         <AboutTexts>
-          <SectionTitle>Temos os <span>melhores advogados</span> para seu melhor suporte</SectionTitle>
+          <SectionTitle data-aos="zoom-in">Temos os <span>melhores advogados</span> para seu melhor suporte</SectionTitle>
           <AboutP>
             Juris Power é seu parceiro confiável em todas as etapas da sua jornada jurídica, 
             oferecendo orientação clara, soluções eficazes e atuação firme na defesa dos seus direitos.

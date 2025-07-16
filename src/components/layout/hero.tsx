@@ -7,14 +7,14 @@ export const Hero = () => {
   return (
     <Section id="home">
       <Container className="flexCenter heroContainer">
-        <HeroTitle>Consultoria <span>jurídica</span><br/> de alta <span>qualidade</span></HeroTitle>
+        <HeroTitle data-aos="fade-down">Consultoria <span>jurídica</span><br/> de alta <span>qualidade</span></HeroTitle>
         <HeroImage className="flexCenter">
-          <img src="estatua.png" alt="estatua" />
-          <ImageTextLeft>
+          <img data-aos="zoom-in" src="estatua.png" alt="estatua" />
+          <ImageTextLeft data-aos="zoom-in">
             Somos especialistas em transformar problemas jurídicos em soluções reais.
             Com experiência, compromisso e ética, oferecemos um atendimento personalizado e focado em resultados.
           </ImageTextLeft>
-          <ImageTextRight>
+          <ImageTextRight data-aos="zoom-in">
             Oferecemos soluções jurídicas práticas e acessíveis, com linguagem clara, atendimento próximo e 
             agilidade na resolução dos seus desafios.  Entendemos profundamente a lei para facilitar sua vida. 
             Resolvemos com estratégia, clareza e foco no resultado.

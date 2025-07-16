@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { casesData } from "@/data/cases"
 import { useEffect, useState } from "react"
+import { SwipperArrows } from "../swiper-arrows"
 
 export const Cases = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,7 +27,7 @@ export const Cases = () => {
     <Section id="cases">
       <Container>
         <CasesTop>
-          <SectionTitle>Nossos <span>estudos</span> de cada <span>caso</span></SectionTitle>
+          <SectionTitle data-aos="zoom-in">Nossos <span>estudos</span> de cada <span>caso</span></SectionTitle>
           <p>Explore nossos estudos e descubra como cada caso judicial é tratado na prática. Entenda como podemos ajudar você e veja de perto como atuamos em diferentes áreas.</p>
           <Button>Ver mais</Button>
         </CasesTop>
@@ -51,6 +52,7 @@ export const Cases = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <SwipperArrows></SwipperArrows>
         </CasesSlide>
       </Container>
     </Section>

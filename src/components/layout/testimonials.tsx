@@ -6,6 +6,7 @@ import { testimonialsData } from "@/data/testimonials";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useEffect, useState } from "react";
+import { SwipperArrows } from "../swiper-arrows";
 export const Testimonials = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -38,6 +39,7 @@ export const Testimonials = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <SwipperArrows></SwipperArrows>
         </TestimonialsSlide>
       </Container>
     </Section>

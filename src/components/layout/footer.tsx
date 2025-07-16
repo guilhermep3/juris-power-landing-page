@@ -16,7 +16,7 @@ export const Footer = () => {
           </LogoContainer>
           <FooterLinks>
             {linksNavigations.map((i) => (
-              <a href={i.href} key={i.label}>{i.label}</a>
+              <a href={`#${i.href}`} key={i.label}>{i.label}</a>
             ))}
           </FooterLinks>
           <SocialMedias>
