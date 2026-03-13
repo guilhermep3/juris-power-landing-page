@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Button } from "../styled/button.style"
 import { CaseAside, CaseBox, CaseInfos, CaseRelative, CasesSlide, CasesTop } from "../styled/cases.style"
 import { Container } from "../styled/container.style"
-import { Section, SectionTitle } from "../styled/section.style"
+import { Section, SectionDescription, SectionTitle } from "../styled/section.style"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { casesData } from "@/data/cases"
@@ -28,7 +28,9 @@ export const Cases = () => {
       <Container>
         <CasesTop>
           <SectionTitle data-aos="zoom-in">Nossos <span>estudos</span> de cada <span>caso</span></SectionTitle>
-          <p>Explore nossos estudos e descubra como cada caso judicial é tratado na prática. Entenda como podemos ajudar você e veja de perto como atuamos em diferentes áreas.</p>
+          <SectionDescription>
+            Explore nossos estudos e descubra como cada caso judicial é tratado na prática. Entenda como podemos ajudar você e veja de perto como atuamos em diferentes áreas.
+          </SectionDescription>
           <Button>Ver mais</Button>
         </CasesTop>
         <CasesSlide>

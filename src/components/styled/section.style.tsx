@@ -15,11 +15,15 @@ export const Section = styled.section`
   &.relative{
     position: relative;
   }
+  &#services{
+    background: var(--dark-blue2);
+  }
 `;
 
 export const SectionTitle = styled.h1`
-  font-size: 36px;
+  font-size: 48px;
   font-weight: bold;
+  font-family: var(--second-font);
 
   &.center{
     text-align: center;
@@ -30,7 +34,18 @@ export const SectionTitle = styled.h1`
   }
 
   ${media.mobile(`
-    font-size: 28px;
+    font-size: 36px;
+    text-align: center;
+  `)}
+`
+export const SectionDescription = styled.p`
+  margin: 20px 0;
+  font-size: 18px;
+  color: var(--gray-30);
+  letter-spacing: 0.02em;
+
+  ${media.mobile(`
+    font-size: 16px;
     text-align: center;
   `)}
 `

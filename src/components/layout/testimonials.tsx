@@ -7,17 +7,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { useEffect, useState } from "react";
 import { SwipperArrows } from "../swiper-arrows";
+
 export const Testimonials = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   function checkIsMobile() {
     setIsMobile(window.innerWidth < 768 ? true : false);
   }
+
   useEffect(() => {
     checkIsMobile();
-    window.addEventListener('scroll', checkIsMobile);
+    window.addEventListener('resize', checkIsMobile);
 
-    return window.removeEventListener('scroll', checkIsMobile)
+    return window.removeEventListener('resize', checkIsMobile)
   }, []);
 
   return (

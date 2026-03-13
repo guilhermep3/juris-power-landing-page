@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/footer";
 import StyledComponentsRegistry from "./registry";
 
 export const metadata: Metadata = {
-  title: "Juris Power Landing Page"
+  title: "Juris Power"
 };
 
 export default function RootLayout({

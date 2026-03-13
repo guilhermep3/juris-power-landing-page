@@ -6,7 +6,7 @@ export const AboutTexts = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
   max-width: 80%;
   margin: 0 auto;
 
@@ -16,23 +16,12 @@ export const AboutTexts = styled.div`
   `)}
 
   h1{
-    width: 44%;
+    width: 100% !important;
 
     ${media.tablet(`
       width: 95%;
     `)}
   }
-`
-
-export const AboutP = styled.div`
-  font-size: 16px;
-  width: 44%;
-  line-height: 24px;
-
-  ${media.tablet(`
-    width: 95%;
-    font-size: 14px;
-  `)}
 `
 
 export const AboutImages = styled.div`
@@ -50,6 +39,7 @@ export const ImagesBox = styled.div`
 
 export const ImageBox = styled.div`
   position: absolute;
+  border: var(--primary-color) 2px solid;
 
   img {
     width: 100%;

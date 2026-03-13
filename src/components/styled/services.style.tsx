@@ -49,6 +49,15 @@ export const ServiceBox = styled.div`
   flex-direction: column;
   gap: 16px;
   margin: 0 auto;
+  transition: all 0.3s ease;
+  padding: 20px 8px;
+  border: transparent 1px solid;
+  
+  &:hover {
+    transform: scale(1.05);
+    background-color: #13132e55;
+    border-color: var(--primary-color-opaque);
+  }
 
   ${media.mobile(`
     max-width: 320px;
@@ -56,6 +65,10 @@ export const ServiceBox = styled.div`
 
   h3{
     font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+    color: var(--gray-30);
   }
 `
 

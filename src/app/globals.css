@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Outfit:wght@300;400;500&display=swap');
 
 :root{
   --primary-color: #DEB086;
   --primary-color-opaque: #deb18644;
   --dark-blue: #080818;
-  --dark-blue2: #13132e;
-  --dark-blue-opaque: #08081844;
+  --dark-blue2: #0b1120;
+  --gray-90: #18181b;
+  --gray-80: #27272a;
+  --gray-70: #3f3f46;
+  --gray-60: #52525c;
+  --gray-50: #71717b;
+  --gray-40: #9f9fa9;
+  --gray-30: #d4d4d8;
+  --gray-20: #e4e4e7;
+  --gray-10: #f4f4f5;
+  --second-font: 'Cormorant Garamond', serif;
 }
 
 * {

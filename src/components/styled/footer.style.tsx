@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { media } from "./mediaQueries";
 
 export const FooterStyled = styled.footer`
-  background-color: var(--dark-blue2);
+  background: var(--dark-blue2);
   padding: 32px 16px;
   color: #ffffff;
 `
@@ -21,12 +21,20 @@ export const FooterLinks = styled.footer`
   display: flex;
   gap: 20px;
   font-size: 15px;
+  
+  a {
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
 
   ${media.tablet(`
     display: none;
   `)}
 `
-  
+
 export const SocialMedias = styled.footer`
   display: flex;
   align-items: center;
@@ -45,8 +53,14 @@ export const FooterBottom = styled.footer`
   text-align: center;
   padding-top: 20px;
   font-size: 12px;
+  color: var(--gray-30);
 
   a{
     text-decoration: underline;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--primary-color);
+    }
   }
 `

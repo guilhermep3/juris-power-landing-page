@@ -13,19 +13,19 @@ export const servicesData: Service[] = [
   {
     id: 1,
     name: 'Direito Empresarial',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum posuere blandit. Maecenas nec magna quis erat venenatis suscipit eu sed est.',
+    description: 'Consultoria contratual, fusões e aquisições, recuperação de crédito e planejamento tributário para proteger os interesses da sua empresa.',
     icon: <FaUserTie/>
   },
   {
     id: 2,
     name: 'Direito Criminal',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum posuere blandit. Maecenas nec magna quis erat venenatis suscipit eu sed est.',
+    description: 'Defesa técnica especializada em inquéritos policiais, processos criminais e tribunais do júri, com estratégias personalizadas para cada caso.',
     icon: <GiPoliceOfficerHead/>
   },
   {
     id: 3,
-    name: 'Direito Empresarial',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum posuere blandit. Maecenas nec magna quis erat venenatis suscipit eu sed est.',
+    name: 'Direito de Família',
+    description: 'Soluções humanizadas em divórcio, guarda de filhos, pensão alimentícia e inventários, preservando a harmonia familiar.',
     icon: <MdFamilyRestroom/>
   },
 ]

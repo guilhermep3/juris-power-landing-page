@@ -1,6 +1,6 @@
-import { AboutImages, AboutP, AboutTexts, ImageBox, ImagesBox } from "../styled/about.style"
+import { AboutImages, AboutTexts, ImageBox, ImagesBox } from "../styled/about.style"
 import { Container } from "../styled/container.style"
-import { Section, SectionTitle } from "../styled/section.style"
+import { Section, SectionDescription, SectionTitle } from "../styled/section.style"
 
 export const About = () => {
 
@@ -9,10 +9,10 @@ export const About = () => {
       <Container className="aboutContainer">
         <AboutTexts>
           <SectionTitle data-aos="zoom-in">Temos os <span>melhores advogados</span> para seu melhor suporte</SectionTitle>
-          <AboutP>
+          <SectionDescription>
             Juris Power é seu parceiro confiável em todas as etapas da sua jornada jurídica, 
             oferecendo orientação clara, soluções eficazes e atuação firme na defesa dos seus direitos.
-          </AboutP>
+          </SectionDescription>
         </AboutTexts>
         <AboutImages>
           <ImagesBox>

@@ -1,7 +1,7 @@
 import { AttorneysImages, AttorneysTexts, ImagesArea, Range } from "../styled/atorneys.style"
 import { Button } from "../styled/button.style"
 import { Container } from "../styled/container.style"
-import { Section, SectionTitle } from "../styled/section.style"
+import { Section, SectionDescription, SectionTitle } from "../styled/section.style"
 
 export const Attorneys = () => {
 
@@ -16,11 +16,11 @@ export const Attorneys = () => {
         </AttorneysImages>
         <AttorneysTexts>
           <SectionTitle data-aos="zoom-in">Nós temos os <span>melhores advogados</span> para te atender</SectionTitle>
-          <p>
+          <SectionDescription>
             Sabemos que questões jurídicas podem ser desafiadoras,  por isso, atuamos com empatia, clareza e total 
             transparência. Cada cliente é tratado como único, com atenção dedicada e soluções sob medida.
             Mais que advogados, somos seus parceiros para decisões seguras, inteligentes e amparadas pela lei.
-          </p>
+          </SectionDescription>
           <Button className="blue2">Ver Mais</Button>
         </AttorneysTexts>
         <Range></Range>
