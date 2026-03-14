@@ -11,7 +11,7 @@ export const ServicesTop = styled.div`
   text-align: center;
   gap: 20px;
   
-  h1{
+  div, h1 {
     width: 50%;
     margin: 0 auto;
     
@@ -19,6 +19,7 @@ export const ServicesTop = styled.div`
       width: 100%;
     `)}
   }
+
   p{
     width: 50%;
     margin: 0 auto;

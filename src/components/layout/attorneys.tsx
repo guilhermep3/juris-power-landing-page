@@ -1,3 +1,5 @@
+"use client"
+import { motion } from "motion/react"
 import { AttorneysImages, AttorneysTexts, ImagesArea, Range } from "../styled/atorneys.style"
 import { Button } from "../styled/button.style"
 import { Container } from "../styled/container.style"
@@ -15,9 +17,15 @@ export const Attorneys = () => {
           </ImagesArea>
         </AttorneysImages>
         <AttorneysTexts>
-          <SectionTitle data-aos="zoom-in">Nós temos os <span>melhores advogados</span> para te atender</SectionTitle>
+          <motion.div
+            initial={{ opacity: 0, y: -60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <SectionTitle>Nós temos os <span>melhores advogados</span> para te atender</SectionTitle>
+          </motion.div>
           <SectionDescription>
-            Sabemos que questões jurídicas podem ser desafiadoras,  por isso, atuamos com empatia, clareza e total 
+            Sabemos que questões jurídicas podem ser desafiadoras,  por isso, atuamos com empatia, clareza e total
             transparência. Cada cliente é tratado como único, com atenção dedicada e soluções sob medida.
             Mais que advogados, somos seus parceiros para decisões seguras, inteligentes e amparadas pela lei.
           </SectionDescription>

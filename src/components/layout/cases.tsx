@@ -9,6 +9,7 @@ import 'swiper/css';
 import { casesData } from "@/data/cases"
 import { useEffect, useState } from "react"
 import { SwipperArrows } from "../swiper-arrows"
+import { motion } from "motion/react"
 
 export const Cases = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -27,7 +28,13 @@ export const Cases = () => {
     <Section id="cases">
       <Container>
         <CasesTop>
-          <SectionTitle data-aos="zoom-in">Nossos <span>estudos</span> de cada <span>caso</span></SectionTitle>
+          <motion.div
+            initial={{ opacity: 0, y: -60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <SectionTitle>Nossos <span>estudos</span> de cada <span>caso</span></SectionTitle>
+          </motion.div>
           <SectionDescription>
             Explore nossos estudos e descubra como cada caso judicial é tratado na prática. Entenda como podemos ajudar você e veja de perto como atuamos em diferentes áreas.
           </SectionDescription>

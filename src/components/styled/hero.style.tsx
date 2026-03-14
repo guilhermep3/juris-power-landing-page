@@ -73,9 +73,10 @@ export const HeroImage = styled.div`
     width: 60%;
     transform: scale(1.1);
     z-index: 20;
+    transition: all 0.3s ease;
 
     &:hover {
-      transform: scale(1.25);
+      transform: scale(1.15);
     }
 
     ${media.mobile(`

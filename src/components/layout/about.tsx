@@ -1,6 +1,8 @@
+"use client"
 import { AboutImages, AboutTexts, ImageBox, ImagesBox } from "../styled/about.style"
 import { Container } from "../styled/container.style"
 import { Section, SectionDescription, SectionTitle } from "../styled/section.style"
+import { motion } from "motion/react"
 
 export const About = () => {
 
@@ -8,9 +10,15 @@ export const About = () => {
     <Section id="about">
       <Container className="aboutContainer">
         <AboutTexts>
-          <SectionTitle data-aos="zoom-in">Temos os <span>melhores advogados</span> para seu melhor suporte</SectionTitle>
+          <motion.div
+            initial={{ opacity: 0, y: -60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <SectionTitle>Temos os <span>melhores advogados</span> para seu melhor suporte</SectionTitle>
+          </motion.div>
           <SectionDescription>
-            Juris Power é seu parceiro confiável em todas as etapas da sua jornada jurídica, 
+            Juris Power é seu parceiro confiável em todas as etapas da sua jornada jurídica,
             oferecendo orientação clara, soluções eficazes e atuação firme na defesa dos seus direitos.
           </SectionDescription>
         </AboutTexts>
