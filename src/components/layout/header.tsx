@@ -2,15 +2,10 @@
 import { linksNavigations } from "@/data/links-navigations"
 import { Container } from "../styled/container.style"
 import { Button } from "../styled/button.style"
-import {
-  StyledHeader,
-  LogoContainer,
-  NavList,
-  NavItem,
-  Nav,
-} from "../styled/header.style"
+import { StyledHeader, NavList, NavItem, Nav } from "../styled/header.style"
 import { useEffect, useState } from "react"
 import { Btn, MenuButton, NavMenu, NavMenuContainer, Ul } from "../styled/menu-mobile.style"
+import { Logo } from "../logo"
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -30,10 +25,7 @@ export const Header = () => {
     <>
       <StyledHeader className={isActive ? 'active' : ''}>
         <Container className="headerContainer">
-          <LogoContainer href="/">
-            <img src="logo-juris-power.svg" alt="logo-juris-power" />
-            <p><span>Juris</span> Power</p>
-          </LogoContainer>
+          <Logo />
           <Nav>
             <NavList>
               {linksNavigations.map((i, index) => (

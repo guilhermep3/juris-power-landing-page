@@ -45,7 +45,7 @@ export const HeroSection = styled.section`
 `
 
 export const HeroTitle = styled.h1`
-  font-size: 52px;
+  font-size: 60px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;

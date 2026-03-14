@@ -1,8 +1,8 @@
 import { linksNavigations } from "@/data/links-navigations"
 import { Container } from "../styled/container.style"
 import { FooterBottom, FooterLinks, FooterStyled, FooterTop, SocialMedias } from "../styled/footer.style"
-import { LogoContainer } from "../styled/header.style"
 import { FaInstagram, FaFacebook, FaTwitter, FaTiktok } from "react-icons/fa";
+import { Logo } from "../logo";
 
 export const Footer = () => {
 
@@ -10,10 +10,7 @@ export const Footer = () => {
     <FooterStyled>
       <Container className="flexCenter footerContainer">
         <FooterTop>
-          <LogoContainer>
-            <img src="logo-juris-power.svg" alt="logo-juris-power" />
-            <p><span>Juris</span> Power</p>
-          </LogoContainer>
+          <Logo />
           <FooterLinks>
             {linksNavigations.map((i) => (
               <a href={`#${i.href}`} key={i.label}>{i.label}</a>

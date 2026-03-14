@@ -21,7 +21,7 @@ export const Section = styled.section`
 `;
 
 export const SectionTitle = styled.h1`
-  font-size: 48px;
+  font-size: 52px;
   font-weight: bold;
   font-family: var(--second-font);
 
@@ -40,7 +40,7 @@ export const SectionTitle = styled.h1`
 `
 export const SectionDescription = styled.p`
   margin: 20px 0;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--gray-30);
   letter-spacing: 0.02em;
 

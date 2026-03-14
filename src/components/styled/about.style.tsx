@@ -15,11 +15,12 @@ export const AboutTexts = styled.div`
     max-width: 100%;
   `)}
 
-  h1{
-    width: 100% !important;
+  p {
+    max-width: 40%;
 
     ${media.tablet(`
-      width: 95%;
+      max-width: 100%;
+      margin-bottom: 24px;
     `)}
   }
 `
@@ -39,6 +40,8 @@ export const ImagesBox = styled.div`
 
 export const ImageBox = styled.div`
   position: absolute;
+  border-radius: 16px;
+  overflow: hidden;
   border: var(--primary-color) 2px solid;
 
   img {
@@ -49,8 +52,8 @@ export const ImageBox = styled.div`
   }
 
   &.img1 {
-    top: 17%;
-    left: 9%;
+    top: 19%;
+    left: 10%;
     width: 30%;
   }
 

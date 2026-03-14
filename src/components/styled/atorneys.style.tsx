@@ -15,12 +15,16 @@ export const ImagesArea = styled.div`
   
   .img1{
     width: 100%;
+    border-radius: 16px;
+    border: var(--primary-color) 2px solid;
   }
   .img2{
     position: absolute;
     width: 50%;
     bottom: -10%;
     left: -10%;
+    border-radius: 16px;
+    border: var(--primary-color) 2px solid;
   }
 `
 

@@ -32,16 +32,17 @@ export const LogoContainer = styled.a`
     `)}
   }
   p{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: var(--second-font);
 
     ${media.tablet(`
       max-width: 80px;
       font-size: 18px;  
     `)}
 
-    span{
+    span {
       color: var(--primary-color);
     }
   }
